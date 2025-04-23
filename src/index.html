@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="input.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+
+    <nav class="bg-white dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/public/assets/images/DALL_E_2025-02-10_20.26.46_-_A_modern_and_creative_logo_with_a_unique_abstract_design__shown_from_the_front_view._The_logo_should_be_sleek__minimalistic__and_futuristic__featuring-removebg-preview.png" class="h-20" alt="Logo" />
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:order-2">
+          <button type="button" class="nav-btn font-medium rounded-lg text-sm px-4 py-2 hidden md:inline-block">Get started</button>
+          <button id="mobile-menu-button" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Collapsible Menu -->
+        <div id="mobile-menu" class="hidden w-full md:flex md:w-auto md:order-1">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li><a href="index.html" class="block py-2 px-3 text-white hover:text-yellow-400">Home</a></li>
+            <li><a href="about.html" class="block py-2 px-3 text-white hover:text-yellow-400">About</a></li>
+            <li><a href="#" class="block py-2 px-3 text-white hover:text-yellow-400">Services</a></li>
+
+            <li><a href="faq.html" class="block py-2 px-3 text-white hover:text-yellow-400">FAQ</a></li>
+
+            <li><a href="contact.html" class="block py-2 px-3 text-white hover:text-yellow-400">Contact</a></li>
+            <!-- Get Started for Mobile -->
+            <li><button class="nav-btn font-medium rounded-lg text-sm px-4 py-2 w-full md:hidden">Get started</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Recent -->
+      <section class="recently py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+          <!-- Card 1 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/Redfall_Bnet_Boxart_1200x1476-01.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Redfall</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Redfall is a first-person shooter video game developed by Arkane Austin and published by Bethesda Softworks.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/assassins-creed-shadows-official-cover-art-v0-yscvb4s38m0d1.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Shadows</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Shadows is an action-adventure game by Ubisoft set in Feudal Japan, featuring Naoe and Yasuke.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/lost-soul-aside-keyart-scaled.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Lost Soul Aside</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Lost Soul Aside is an action RPG by UltiZero Games, following Kazer in a war-torn fantasy world.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/god-of-war-ragnarok-store-art-01-10sep21$ru.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">God of War Ragnarök</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">God of War Ragnarök is an action-adventure game by Santa Monica Studio set in Norse mythology.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/thumb-1920-927077.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Odyssey</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Odyssey is an epic open-world action RPG set in Ancient Greece, where you shape your destiny as a legendary Spartan hero.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/control.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Control</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Control is a supernatural third-person action game where you explore a shifting government building and use telekinetic powers to uncover hidden secrets</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 7 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/south.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">South of Midnight</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">South of Midnight is a third-person action-adventure set in the American South, where you face dark creatures and uncover deep folklore-based mysteries.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 8 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/tekken 8.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Tekken</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Tekken 8 is a fast-paced fighting game featuring intense battles, stunning visuals, and the ongoing saga of the Mishima bloodline.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/Alan-Wake-II.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Alan Wake II</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Alan Wake 2 is a psychological horror game where two heroes investigate twisted mysteries across eerie worlds filled with darkness and fear.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 9 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/EGS_SplitFiction.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Split Fiction</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Split Fiction is a narrative-driven game where players navigate multiple realities, uncovering secrets and making choices that alter the fate of the world.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 10 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/horizonforbiddenwestcover.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Horizon Forbidden West</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Horizon Forbidden West is an action RPG where Aloy ventures into a dangerous new world to uncover secrets, fight robotic foes, and save humanity.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 11 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/capsule.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Plague Tale: Requiem</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">A Plague Tale: Requiem follows Amicia and Hugo as they navigate a dark, plague-ridden world, fighting survival and uncovering a tragic, mystical fate</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/final-fantasy-vii-rebirth-pc-game-steam-cover.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Final Fantasy VII Rebirth</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Final Fantasy VII Rebirth continues Cloud’s journey in a reimagined world, filled with new adventures, powerful battles, and deepening relationships.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 12 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/Days+Gone+Remastered.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Days Gone Remastered</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Days Gone Remastered follows Deacon St. John, a biker in a post-apocalyptic world, as he fights for survival against vicious creatures and human enemies.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 13 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/spiderman 2.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Spiderman 2</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Spider-Man 2 follows Peter Parker and Miles Morales as they face new threats in an expanded open world, battling villains and balancing their superhero lives.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 14 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/returnal.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Returnal</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Returnal is a roguelike third-person shooter where Selene crash-lands on a mysterious planet, battling alien creatures while uncovering her past.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- pagination -->
+
+          <nav aria-label="Page navigation example">
+            <ul class="flex items-center -space-x-px h-8 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  <span class="sr-only">Previous</span>
+                  <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >1</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >2</a
+                >
+              </li>
+
+              <li>
+                <a href="#" aria-current="page" class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >4</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >5</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  <span class="sr-only">Next</span>
+                  <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- Recent Ends -->
+
+      <!-- Popular  -->
+      <section class="popular py-10">
+        <div class="flex items-center justify-between w-full max-w-screen px-4 py-2 bg-gray-900">
+          <div class="flex items-center border-l-4 border-blue-600 pl-3">
+            <h2 class="text-white text-lg font-semibold">POPULAR APPS: LAST 24 HOURS</h2>
+          </div>
+          <a href="#" class="text-white text-sm hover:underline">View More</a>
+        </div>
+
+        <!-- Popular Items -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+          <!-- Card 1 -->
+          <!-- Card 1 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/Redfall_Bnet_Boxart_1200x1476-01.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Redfall</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Redfall is a first-person shooter video game developed by Arkane Austin and published by Bethesda Softworks.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/assassins-creed-shadows-official-cover-art-v0-yscvb4s38m0d1.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Shadows</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Shadows is an action-adventure game by Ubisoft set in Feudal Japan, featuring Naoe and Yasuke.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/lost-soul-aside-keyart-scaled.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Lost Soul Aside</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Lost Soul Aside is an action RPG by UltiZero Games, following Kazer in a war-torn fantasy world.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/god-of-war-ragnarok-store-art-01-10sep21$ru.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">God of War Ragnarök</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">God of War Ragnarök is an action-adventure game by Santa Monica Studio set in Norse mythology.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/thumb-1920-927077.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Odyssey</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Odyssey is an epic open-world action RPG set in Ancient Greece, where you shape your destiny as a legendary Spartan hero.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/control.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Control</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Control is a supernatural third-person action game where you explore a shifting government building and use telekinetic powers to uncover hidden secrets</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 7 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/south.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">South of Midnight</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">South of Midnight is a third-person action-adventure set in the American South, where you face dark creatures and uncover deep folklore-based mysteries.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 8 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/tekken 8.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Tekken</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Tekken 8 is a fast-paced fighting game featuring intense battles, stunning visuals, and the ongoing saga of the Mishima bloodline.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Popular Ends -->
+
+      <!-- Popular Games -->
+      <section class="popular_games py-10">
+        <div class="flex items-center justify-between w-full max-w-screen px-4 py-2 bg-gray-900">
+          <div class="flex items-center border-l-4 border-blue-600 pl-3">
+            <h2 class="text-white text-lg font-semibold">POPULAR Games: LAST 24 HOURS</h2>
+          </div>
+          <a href="#" class="text-white text-sm hover:underline">View More</a>
+        </div>
+
+        <!-- Popular Games Items -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+          <!-- Card 1 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/Redfall_Bnet_Boxart_1200x1476-01.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Redfall</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Redfall is a first-person shooter video game developed by Arkane Austin and published by Bethesda Softworks.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/assassins-creed-shadows-official-cover-art-v0-yscvb4s38m0d1.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Shadows</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Shadows is an action-adventure game by Ubisoft set in Feudal Japan, featuring Naoe and Yasuke.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/lost-soul-aside-keyart-scaled.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Lost Soul Aside</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Lost Soul Aside is an action RPG by UltiZero Games, following Kazer in a war-torn fantasy world.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/god-of-war-ragnarok-store-art-01-10sep21$ru.webp" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">God of War Ragnarök</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">God of War Ragnarök is an action-adventure game by Santa Monica Studio set in Norse mythology.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/thumb-1920-927077.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Assassin's Creed Odyssey</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Assassin's Creed Odyssey is an epic open-world action RPG set in Ancient Greece, where you shape your destiny as a legendary Spartan hero.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/control.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Control</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Control is a supernatural third-person action game where you explore a shifting government building and use telekinetic powers to uncover hidden secrets</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 7 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/south.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">South of Midnight</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">South of Midnight is a third-person action-adventure set in the American South, where you face dark creatures and uncover deep folklore-based mysteries.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 8 -->
+
+          <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <div class="overflow-hidden">
+                <img class="rounded-t-lg object-cover w-full h-[180px]" src="/public/assets/images/tekken 8.jpg" alt="Redfall" />
+              </div>
+              <div class="p-4 text-center">
+                <a href="#">
+                  <h5 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Tekken</h5>
+                </a>
+                <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Tekken 8 is a fast-paced fighting game featuring intense battles, stunning visuals, and the ongoing saga of the Mishima bloodline.</p>
+                <a href="#" class="read-more inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg focus:ring-4 focus:outline-none">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <!-- Popular Games Ends -->
+
+      <!-- Footer -->
+      <footer class="py-4 px-6 text-gray-700 text-sm border-t">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between">
+          <!-- Empty div for spacing on the left -->
+          <div class="w-1/3"></div>
+
+          <!-- Explore Section (Centered) -->
+          <div class="flex items-center text-sm justify-center w-1/3">
+            <span class="font-semibold text-white">Explore:</span>
+            <a href="#" class="text-blue-600 hover:underline ml-2">Popular Apps</a> |
+            <a href="#" class="text-blue-600 hover:underline ml-2">Popular Games</a>
+          </div>
+
+          <!-- Language Selector (Right-Aligned) -->
+          <div class="w-1/3 flex justify-end">
+            <select class="border rounded-md px-4 py-2 text-gray-700 cursor-pointer focus:outline-none">
+              <option>EN</option>
+              <option>ES</option>
+              <option>FR</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="text-white mt-3">
+          &copy; 2025
+          <a href="#" class="text-blue-600 hover:underline">AndroidAPKsFree.com</a> | <a href="#" class="text-blue-600 hover:underline">About</a> | <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a> | <span class="font-bold">Disclaimer:</span> This website is
+          only for free apps, <a href="#" class="text-blue-600 hover:underline">Use this form</a> to submit your app or to report copyrighted content.
+        </p>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script>
+      const menuBtn = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+/* Add your custom styles here */
+:root {
+  /* Colors */
+  --background-color: #0d0f14; /* Dark background */
+  --card-background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  --card-border: rgba(255, 255, 255, 0.2);
+  --primary-neon: #00ffcc; /* Neon green */
+  --secondary-neon: #0077ff; /* Neon blue */
+  --text-color: #ffffff; /* Main text */
+  --text-muted: #bbbbbb; /* Muted text */
+  --hover-glow: rgba(0, 255, 204, 0.5);
+  --shadow-color: rgba(0, 255, 204, 0.3);
+  --faq-color: #facc15;
+  --span-color: #ffcc00
+  
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-sm: 14px;
+  
+  /* Buttons */
+  --button-bg: var(--primary-neon);
+  --button-text: #000;
+  --button-hover: var(--secondary-neon);
+  --button-glow: 0 0 8px var(--hover-glow);
+  
+  /* Cards */
+  --card-radius: 12px;
+  --card-shadow: 0px 4px 10px var(--shadow-color);
+  
+  /* Inputs */
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.2);
+  --input-focus: var(--primary-neon);
+  
+  /* Animations */
+  --transition-speed: 0.3s ease-in-out;
+}
+
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.card {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  transition: var(--transition-speed);
+}
+
+.card:hover {
+  box-shadow: 0px 4px 15px var(--hover-glow);
+}
+
+.button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: var(--transition-speed);
+  box-shadow: var(--button-glow);
+}
+
+.button:hover {
+  background: var(--button-hover);
+  box-shadow: 0px 0px 15px var(--hover-glow);
+}
+
+.input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  padding: 10px;
+  border-radius: 8px;
+  transition: var(--transition-speed);
+}
+
+.input:focus {
+  border-color: var(--input-focus);
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+/* Navbar Starts */
+
+/* Navbar Background */
+.bg-white.dark\:bg-gray-900 {
+  background: transparent !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Links */
+a {
+  color: white !important; 
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+a:hover {
+  color: var(--faq-color) !important; 
+  transform: scale(1.05);
+}
+
+/* Active Link */
+.bg-blue-700 {
+  background-color: var(--faq-color) !important;
+  color: #1e3a8a !important;
+  font-weight: 600;
+}
+
+/* Get Started Button */
+.nav-btn {
+  background: #facc15 !important;
+  color: var(--button-text) !important;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  
+}
+
+.nav-btn {
+  background: #facc15; 
+  color: var(--button-text); 
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: none; 
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #eab308; 
+  transform: scale(1.05); 
+}
+
+.nav-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5); 
+}
+
+/* Navbar Ends */
+
+/* Recent Section Starts */
+
+.recently.container img {
+  width: 100%;
+  height: 400px;
+}
+
+.recently .read-more {
+  background-color: var(--primary-neon);
+  color: var(--button-text) !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.recently .read-more:hover {
+  background-color:#eab308;
+  transform: scale(1.05);
+  color: var(--button-text) !important;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+.recently .read-more svg {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Recent Section Ends */
+
+/* Popular */
+.popular a {
+  color: var(--primary-neon);
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.popular .read-more {
+  background-color: var(--primary-neon);
+  color: var(--button-text) !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.popular .read-more:hover {
+  background-color:#eab308;
+  transform: scale(1.05);
+  color: var(--button-text) !important;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+.popular .read-more svg {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* popular ends */
+
+/* Games Starts */
+.popular_games {
+  color: var(--primary-neon);
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.popular_games .read-more {
+  background-color: var(--primary-neon);
+  color: var(--button-text) !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.popular_games .read-more:hover {
+  background-color:#eab308;
+  transform: scale(1.05);
+  color: var(--button-text) !important;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+}
+
+/*  */
+
+/* Games Ends */
+
+/* Footer Starts */
+.footer {
+  background: var(--background-color);
+  color: var(--text-muted);
+  padding: 20px 0;
+}
+
+.footer a {
+  color: var(--text-muted);
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.footer a:hover {
+  color: #facc15;
+  transform: scale(1.05);
+}
+
+/* footer ends */
+
+/* style.css */
+
+
+/* Base hidden state */
+.accordion-body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Active/visible state */
+.accordion-body.active {
+  max-height: 500px; /* enough height for content */
+  opacity: 1;
+}
+
+/* Icon animation */
+[data-accordion-icon] {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when expanded */
+button[aria-expanded="true"] [data-accordion-icon] {
+  transform: rotate(180deg);
+}
+
+.custom-accordion {
+  border: 2px solid var(--primary-neon) !important;
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+}
+
+/* Accordion Button */
+.custom-accordion-btn {
+  background-color: var(--card-background);
+  color: var(--primary-neon);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.custom-accordion-btn:hover {
+  border: var(--faq-color);
+  color: var(--span-color); 
+}
+
+/* Text inside button also changes color */
+.custom-accordion-btn:hover span {
+  color: #ffcc00 !important; 
+}
+
+
+.dark .custom-accordion-btn {
+  background-color: var(--card-background);
+  color: var(--primary-neon);
+}
+
+/* Rotate icon when open */
+.accordion-toggle.open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion p:hover {
+  color: var(--span-color); 
+}
+
+
+
